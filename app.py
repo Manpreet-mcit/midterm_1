@@ -7,9 +7,8 @@ from flask_jwt_extended import JWTManager
 
 app= Flask(__name__)
 api = Api(app)
-
+ 
 DB_ATLAS_URI = "mongodb+srv://cst_user:mcit123@cluster0.vo3fn.mongodb.net/manpreet?retryWrites=true&w=majority"
-
 app.config["MONGODB_HOST"] = DB_ATLAS_URI
 app.config["JWT_SECRET_KEY"] = 'cst-authorization'
 
